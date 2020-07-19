@@ -1,0 +1,66 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog>
+		<beginButton>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
+		</beginButton>
+		<endButton>
+			<Button text="Save" press="onAddHomesForPersonsItem" type="Accept"/>
+		</endButton>
+		<content>
+<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
+    <sap.ui.layout.form:content>
+        <core:Title text="Summary of Beneficiaries for Substance Abuse" icon="sap-icon://account"/>
+        <Label text="Surname &amp; Initials/ File Number"/>
+        <Input width="100%" id="cfSurname"/><Label text="ID Number"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%" id="cfID"/>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Age" width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%" id="cfAge"/>
+        <Label text="Gender" width="100%"/>
+        <ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Male"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Female"/>
+                </items>
+            
+        </ComboBox>
+        <Label text="Race" width="100%"/>
+        <ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Black"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="White"/>
+                <core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Coloured"/>
+                <core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Asian"/>
+                </items>
+            
+        </ComboBox>
+        <Label text="Disabled" width="100%"/>
+        <ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Yes"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="No"/>
+                </items>
+            
+        </ComboBox>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Employed" width="100%"/>
+        <ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Yes"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="No"/>
+                </items>
+            
+        </ComboBox>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Marital Status" width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        <Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Highest Education Level" width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Type of Drugs Abused" width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Date of Admission" width="100%"/>
+        <DatePicker xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" displayFormat="dd-MM-YYYY"/>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Specify whether referred to Government Centres " width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        </sap.ui.layout.form:content>
+</sap.ui.layout.form:SimpleForm>
+</content>
+</Dialog>
+</core:FragmentDefinition>

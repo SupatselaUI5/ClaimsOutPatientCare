@@ -1,0 +1,345 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.OutPatientCareClaims.controller.FrontPage" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Department of Social Development">
+					<content>
+					    <ObjectHeader xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" introActive="true" titleActive="true" icon="images/gauteng.png" titleLevel="H2" intro="Institutional Capacity Building and Support Directorate" title="Programme: Treatment Centres (Out-Patient)">
+					        <attributes>
+					            <ObjectAttribute text="attribute text" id="attribute3">
+					                <customContent>
+					                    <Input xmlns="sap.m" value="Value" id="input0"/>
+					                    
+					                </customContent>
+					                
+					            </ObjectAttribute>
+					            <ObjectAttribute text="BP Number: " id="attribute6"/>
+					            </attributes>
+					        
+					    </ObjectHeader>
+					    <IconTabBar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" selectedKey="__xmlview0--filter3">
+					        <items>
+					            <IconTabFilter text="Particulars" icon="sap-icon://detail-view" iconColor="Critical" key="adminKey" design="Horizontal">
+					                <content>
+					                    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true">
+					                        <sap.ui.layout.form:formContainers>
+					                            <sap.ui.layout.form:FormContainer xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="container3_copy">
+					                                <sap.ui.layout.form:formElements>
+					                                    <sap.ui.layout.form:FormElement label="Month &amp; Year">
+					                                        <sap.ui.layout.form:fields>
+					                                            <DatePicker xmlns="sap.m"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Name of Organization">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Physical Address + Website (If any)">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Province">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Region">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Ward">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Contact Number + Email">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Registered No">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Approved No">
+					                                        <sap.ui.layout.form:fields>
+					                                            <Input width="100%"/>
+					                                            
+					                                        </sap.ui.layout.form:fields>
+					                                        
+					                                    </sap.ui.layout.form:FormElement>
+					                                    </sap.ui.layout.form:formElements>
+					                                
+					                            </sap.ui.layout.form:FormContainer>
+					                            <sap.ui.layout.form:FormContainer id="container0">
+					                                </sap.ui.layout.form:FormContainer>
+					                            </sap.ui.layout.form:formContainers>
+					                        <sap.ui.layout.form:layout>
+					                            <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+					                            
+					                        </sap.ui.layout.form:layout>
+					                        </sap.ui.layout.form:Form>
+					                    <Table xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" noDataText="Drop column list items here and columns in the area above">
+					                        <items>
+					                            <ColumnListItem type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="No. of Prevention Programmes on Substance Abuse"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy12"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy12"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy12"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy12"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="Number of Practitioners Available in In-Patient Substance Abuse Treatment Centers"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy13"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy13"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy13"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy13"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="Number of Clients Counselled on Substance Abuse"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy14"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy14"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy14"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy14"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="Number of Awareness Programmes Provided"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy15"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy15"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy15"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy15"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="Number of Practioners that Received Training"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy16"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy16"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy16"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy16"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="Number of Repeat Admissions"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy17"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy17"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy17"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy17"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="No.of Clients who Attended After Care Programme"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy18"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy18"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy18"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy18"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="No.of Clients Referred for In-Patient Treatment (Govt/NPO)"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy19"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy19"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy19"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy19"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            <ColumnListItem xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" type="Active">
+					                                <cells>
+					                                    <Text xmlns="sap.m" text="No.of Court Referred Patients"/>
+					                                    <Input xmlns="sap.m"/>
+					                                    <Input xmlns="sap.m" id="input15_copy20"/>
+					                                    <Text text="Row 1 Cell 1" id="text66_copy20"/>
+					                                    <Text text="Row 1 Cell 2" id="text67_copy20"/>
+					                                    <Text text="Row 1 Cell 3" id="text68_copy20"/>
+					                                    </cells>
+					                                
+					                            </ColumnListItem>
+					                            </items>
+					                        <columns>
+					                            <Column>
+					                                <header>
+					                                    <Label text="Other Relevant Information" wrapping="true"/>
+					                                    
+					                                </header>
+					                                
+					                            </Column>
+					                            <Column>
+					                                <header>
+					                                    <Label text="Total Number for the Current Month" wrapping="true"/>
+					                                    
+					                                </header>
+					                                
+					                            </Column>
+					                            </columns>
+					                        </Table>
+					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
+					                        <items>
+					                            <Button xmlns="sap.m" text="Next" icon="sap-icon://navigation-right-arrow"/>
+					                            
+					                        </items>
+					                        
+					                    </FlexBox>
+					                    </content>
+					                
+					            </IconTabFilter>
+					            <IconTabFilter text="Claim Form" icon="sap-icon://form" iconColor="Contrast" design="Horizontal">
+					                <content>
+					                    <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="form1">
+					                        <sap.ui.layout.form:content>
+					                            <Table xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" noDataText="Click on the &quot;+&quot; Button to add items" id="Claims">
+					                                <columns>
+					                                    <Column>
+					                                        <header>
+					                                            <Label text="Surname &amp; Initials/ File Number" wrapping="true"/>
+					                                            
+					                                        </header>
+					                                        
+					                                    </Column>
+					                                    <Column>
+					                                        <header>
+					                                            <Label text="ID Number" wrapping="true"/>
+					                                            
+					                                        </header>
+					                                        
+					                                    </Column>
+					                                    <Column>
+					                                        <header>
+					                                            <Label text="Age"/>
+					                                            
+					                                        </header>
+					                                        
+					                                    </Column>
+					                                    </columns>
+					                                <headerToolbar>
+					                                    <Toolbar width="100%">
+					                                        <content>
+					                                            <ToolbarSpacer id="spacer0"/>
+					                                            <Button xmlns="sap.m" icon="sap-icon://add" type="Emphasized" press="handleClaimButtonPressed"/>
+					                                            </content>
+					                                        
+					                                    </Toolbar>
+					                                    
+					                                </headerToolbar>
+					                                </Table>
+					                            
+					                        </sap.ui.layout.form:content>
+					                        
+					                    </sap.ui.layout.form:SimpleForm>
+					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center" id="box1">
+					                        <items>
+					                            <SegmentedButton xmlns="sap.m" selectedKey="one" id="button3">
+					                                <items>
+					                                    <SegmentedButtonItem text="Previous" key="one" textDirection="LTR" width="70%" id="item3"/>
+					                                    <SegmentedButtonItem text="Next" key="three" textDirection="RTL" width="70%" id="item4"/>
+					                                    </items>
+					                                
+					                            </SegmentedButton>
+					                            
+					                        </items>
+					                        
+					                    </FlexBox>
+					                    </content>
+					                
+					            </IconTabFilter>
+					            <IconTabFilter xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="Summary of Staff" icon="sap-icon://family-care" design="Horizontal">
+					                <content>
+					                    <Table xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" noDataText="Click on the &quot;+&quot; Button to add items" id="StaffSummary">
+					                        <columns>
+					                            <Column>
+					                                <header>
+					                                    <Label text="Surname &amp; Initials/ File Number" wrapping="true"/>
+					                                    
+					                                </header>
+					                                
+					                            </Column>
+					                            <Column>
+					                                <header>
+					                                    <Label text="ID Number" wrapping="true"/>
+					                                    
+					                                </header>
+					                                
+					                            </Column>
+					                            <Column>
+					                                <header>
+					                                    <Label text="Gender"/>
+					                                    
+					                                </header>
+					                                
+					                            </Column>
+					                            </columns>
+					                        <headerToolbar>
+					                            <Toolbar width="100%">
+					                                <content>
+					                                    <ToolbarSpacer/>
+					                                    <Button xmlns="sap.m" icon="sap-icon://add" type="Emphasized" press="handleStaffButtonPressed"/>
+					                                    </content>
+					                                
+					                            </Toolbar>
+					                            
+					                        </headerToolbar>
+					                        </Table>
+					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center" id="box1_copy2">
+					                        <items>
+					                            <Button xmlns="sap.m" text="Previous" icon="sap-icon://navigation-left-arrow"/>
+					                            
+					                        </items>
+					                        
+					                    </FlexBox>
+					                    </content>
+					                
+					            </IconTabFilter>
+					            </items>
+					        
+					    </IconTabBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
