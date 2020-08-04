@@ -232,7 +232,7 @@
 					                <content>
 					                    <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="form1">
 					                        <sap.ui.layout.form:content>
-					                            <Table xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" noDataText="Click on the &quot;+&quot; Button to add items" id="Claims">
+					                            <Table xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" noDataText="Click on the &quot;+&quot; Button to add items" id="tblClaims">
 					                                <columns>
 					                                    <Column>
 					                                        <header>
@@ -259,7 +259,7 @@
 					                                <headerToolbar>
 					                                    <Toolbar width="100%">
 					                                        <content>
-					                                            <ToolbarSpacer id="spacer0"/>
+					                                            <ToolbarSpacer/>
 					                                            <Button xmlns="sap.m" icon="sap-icon://add" type="Emphasized" press="handleClaimButtonPressed"/>
 					                                            </content>
 					                                        
@@ -271,12 +271,12 @@
 					                        </sap.ui.layout.form:content>
 					                        
 					                    </sap.ui.layout.form:SimpleForm>
-					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center" id="box1">
+					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
 					                        <items>
-					                            <SegmentedButton xmlns="sap.m" selectedKey="one" id="button3">
+					                            <SegmentedButton xmlns="sap.m" selectedKey="one">
 					                                <items>
-					                                    <SegmentedButtonItem text="Previous" key="one" textDirection="LTR" width="70%" id="item3"/>
-					                                    <SegmentedButtonItem text="Next" key="three" textDirection="RTL" width="70%" id="item4"/>
+					                                    <SegmentedButtonItem text="Previous" key="one" textDirection="LTR" width="70%"/>
+					                                    <SegmentedButtonItem text="Next" key="three" textDirection="RTL" width="70%"/>
 					                                    </items>
 					                                
 					                            </SegmentedButton>
@@ -289,7 +289,7 @@
 					            </IconTabFilter>
 					            <IconTabFilter xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="Summary of Staff" icon="sap-icon://family-care" design="Horizontal">
 					                <content>
-					                    <Table xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" noDataText="Click on the &quot;+&quot; Button to add items" id="StaffSummary">
+					                    <Table xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" noDataText="Click on the &quot;+&quot; Button to add items" id="tblStaffSummary">
 					                        <columns>
 					                            <Column>
 					                                <header>
@@ -324,7 +324,7 @@
 					                            
 					                        </headerToolbar>
 					                        </Table>
-					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center" id="box1_copy2">
+					                    <FlexBox xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
 					                        <items>
 					                            <Button xmlns="sap.m" text="Previous" icon="sap-icon://navigation-left-arrow"/>
 					                            
