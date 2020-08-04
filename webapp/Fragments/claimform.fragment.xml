@@ -4,7 +4,7 @@
 			<Button text="Cancel" press="onCancel" type="Reject"/>
 		</beginButton>
 		<endButton>
-			<Button text="Save" press="onAddHomesForPersonsItem" type="Accept"/>
+			<Button text="Save" press="onAddClaimsItem" type="Accept"/>
 		</endButton>
 		<content>
 <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
